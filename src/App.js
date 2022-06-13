@@ -14,7 +14,7 @@ class App extends Component {
   constructor() {
     super();
 
-    this.clientId =
+    this.clientId = process.env.REACT_APP_CLIENT_ID ||
       "826265862385-p41e559ccssujlfsf49ppmo0gktkf6co.apps.googleusercontent.com";
     this.spreadsheetId =
       process.env.REACT_APP_SHEET_ID ||
